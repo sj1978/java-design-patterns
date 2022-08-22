@@ -11,5 +11,18 @@ public class Main {
                 + " " + "memoria" +  " "  + prueba);
         System.out.println(otro.getContador() + " " +  "counter" + " " + "memoria" + " " + otro);
 
+       Applicacion app =  Applicacion.getInstance();
+       app.Run();
+        System.out.println(app.isRunning);
+       app.turnOff();
+        System.out.println(app.isRunning);
+        System.out.println(app);
+
+        Applicacion app2 =  Applicacion.getInstance();
+        app2.Run();
+        System.out.println(app2.isRunning);
+        app.turnOff();
+        System.out.println(app2.isRunning);
+        System.out.println(app2);
     }
 }
